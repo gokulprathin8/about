@@ -1,15 +1,15 @@
 <!-- Primary Meta Tags -->
 <meta
-name="title"
-content="{{ with .Title -}}
+  name="title"
+  content="{{ with .Title -}}
 {{ . }}
 {{- else -}}
 {{ .Site.Title }}
 {{- end }}"
 />
 <meta
-name="description"
-content="{{ with .Description -}}
+  name="description"
+  content="{{ with .Description -}}
 {{ . }}
 {{- else -}}
 {{ if .IsPage -}}
@@ -36,14 +36,11 @@ content="{{ with .Description -}}
 <meta name="author" content="{{ . }}" />
 {{ end }}
 
-
 <!-- Open Graph / Facebook -->
 {{ template "_internal/opengraph.html" . }}
 
-
 <!-- Twitter -->
 {{ template "_internal/twitter_cards.html" . }}
-
 
 <!-- Microdata -->
 {{ template "_internal/schema.html" . }}
