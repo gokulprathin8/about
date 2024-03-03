@@ -1,9 +1,9 @@
 # Basic config
-baseURL = "https://example.com"
+baseURL = "https://gokulprathin8.github.io/about/"
 theme = "hugo-simple"
-languageCode = "en"                # zh-Hans
-title = "Hugo Simple"
-copyright = "© 2024 Shaolong Chen"
+languageCode = "en"
+title = "Gokuls Homepage"
+copyright = "© 2024 Gokul Prathin A"
 
 # Generate a nice robots.txt for SEO
 enableRobotsTXT = true
@@ -33,14 +33,14 @@ noClasses = true
 style = "catppuccin-mocha"
 
 [params]
-title = "Hugo Simple"
+title = "Gokuls Homepage"
 description = "Hugo Simple Demo"
 favicon = "images/favicon.png"
 dateFormat = "2006-01-02"
 hideMadeWithLine = false
 [params.author]
-name = "Shaolong Chen"
-email = "shaolong.chen@outlook.it"
+name = "Gokul Prathin A"
+email = "gokulprathin8@gmail.com"
 
 [[menu.main]]
 name = "Home"
