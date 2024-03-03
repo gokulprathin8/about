@@ -11,7 +11,7 @@ server:
   hugo server -D --source ./exampleSite --themesDir ../..
 
 build:
-  hugo --minify --gc --destination ../public --source ./exampleSite --themesDir ../.. --baseURL https://maolonglong.github.io/hugo-simple/
+  hugo --minify --gc --destination ../public --source ./exampleSite --themesDir ../.. --baseURL https://gokulprathin8.github.io/about/
 
 fmt:
   # TODO: https://github.com/numtide/treefmt-nix/issues/112
