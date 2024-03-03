@@ -1,6 +1,6 @@
 # Basic config
 baseURL = "https://gokulprathin8.github.io/about/"
-theme = "hugo-simple"
+theme = "about"
 languageCode = "en"
 title = "Gokuls Homepage"
 copyright = "© 2024 Gokul Prathin A"
