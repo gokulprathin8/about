@@ -1,37 +1,39 @@
 <!-- Primary Meta Tags -->
 <meta
-  name="title"
-  content="{{ with .Title -}}
-    {{ . }}
-  {{- else -}}
-    {{ .Site.Title }}
-  {{- end }}"
+name="title"
+content="{{ with .Title -}}
+{{ . }}
+{{- else -}}
+{{ .Site.Title }}
+{{- end }}"
 />
 <meta
-  name="description"
-  content="{{ with .Description -}}
-    {{ . }}
-  {{- else -}}
-    {{ if .IsPage -}}
-      {{ .Summary }}
-    {{- else -}}
-      {{ with .Site.Params.description }}{{ . }}{{ end }}
-    {{- end }}
-  {{- end }}"
+name="description"
+content="{{ with .Description -}}
+{{ . }}
+{{- else -}}
+{{ if .IsPage -}}
+{{ .Summary }}
+{{- else -}}
+{{ with .Site.Params.description }}{{ . }}{{ end }}
+{{- end }}
+{{- end }}"
 />
-<meta
-  name="keywords"
-  content="{{ if .IsPage -}}
-    {{ range $index, $tag := .Params.tags }}{{ $tag }},{{ end }}
-  {{- else -}}
-    {{ range $plural, $terms := .Site.Taxonomies -}}
-      {{ range $term, $val := $terms }}{{ printf "%s," $term }}{{ end }}
-    {{- end }}
-  {{- end -}}
-  "
-/>
+
+<!-- <meta -->
+<!-- name='keywords' -->
+<!-- content="{{ if .IsPage -}} -->
+<!-- {{ range $index, $tag := .Params.tags }}{{ $tag }},{{ end }} -->
+<!-- {{- else -}} -->
+<!-- {{ range $plural, $terms := .Site.Taxonomies -}} -->
+<!-- {{ range $term, $val := $terms }}{{ printf "%s," $term }}{{ end }} -->
+<!-- {{- end }} -->
+<!-- {{- end -}} -->
+<!-- " -->
+<!-- /> -->
+
 {{ with .Site.Params.author.name }}
-  <meta name="author" content="{{ . }}" />
+<meta name="author" content="{{ . }}" />
 {{ end }}
 
 

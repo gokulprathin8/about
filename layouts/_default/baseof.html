@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {{- partial "favicon.html" . -}}
     <title>
-      {{- block "title" . -}}
-        {{ with .Title }}{{ . }}&nbsp;|&nbsp;{{ end }}{{ .Site.Title }}
-      {{- end -}}
+      {{- block "title" . -}} {{ with .Title }}{{ . }}&nbsp;|&nbsp;{{ end }}{{
+      .Site.Title }} {{- end -}}
     </title>
 
     {{- partial "seo_tags.html" . -}}
@@ -20,15 +19,11 @@
     {{ $style := resources.Get "style.css" | minify }}
     <link href="{{ $style.RelPermalink }}" rel="stylesheet" />
 
-    {{ with .Params.style }}
-      {{ $extra := resources.Get . | minify }}
-      <link href="{{ $extra.RelPermalink }}" rel="stylesheet" />
-    {{ end }}
-
-    {{ with .OutputFormats.Get "rss" -}}
-      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-    {{ end -}}
-
+    {{ with .Params.style }} {{ $extra := resources.Get . | minify }}
+    <link href="{{ $extra.RelPermalink }}" rel="stylesheet" />
+    {{ end }} {{ with .OutputFormats.Get "rss" -}} {{ printf `
+    <link rel="%s" type="%s" href="%s" title="%s" />
+    ` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }} {{ end -}}
 
     <!-- A partial to be overwritten by the user.
   Simply place a custom_head.html into
@@ -37,15 +32,9 @@
   </head>
 
   <body>
-    <header>
-      {{ partial "header.html" . }}
-    </header>
-    <main>
-      {{ block "main" . }}{{ end }}
-    </main>
-    <footer>
-      {{ partial "footer.html" . }}
-    </footer>
+    <header>{{ partial "header.html" . }}</header>
+    <main>{{ block "main" . }}{{ end }}</main>
+    <footer>{{ partial "footer.html" . }}</footer>
 
     <!-- A partial to be overwritten by the user.
   Simply place a custom_body.html into

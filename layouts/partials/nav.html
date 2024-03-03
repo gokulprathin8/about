@@ -1,12 +1,9 @@
-{{ $currentPage := . -}}
-{{ range .Site.Menus.main.ByWeight }}
-  <a
-    href="{{ .URL }}"
-    {{ if eq $currentPage .Page }}class="current"{{ end }}
-    >{{ .Name }}</a
-  >
+{{ $currentPage := . -}} {{ range .Site.Menus.main.ByWeight }}
+<a href="{{ .URL }}" {{ if eq $currentPage .Page }}class="current" {{ end }}
+  >{{ .Name }}</a
+>
 {{ end }}
-<a href="{{ absURL "index.xml" }}">
+<a href="{{ absURL 'index.xml' }}">
   <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 448 512">
     <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
     <path
