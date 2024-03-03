@@ -1,0 +1,13 @@
+name = "Gokul Prathin A"
+license = "MIT"
+licenselink = "https://github.com/gokulprathin8/about/blob/master/LICENSE.md"
+description = "My portfolio website"
+homepage = "https://xmin.yihui.org"
+demosite = "https://xmin.yihui.org"
+tags = ["personal-website", "blog", "portfolio", "all things tech"]
+features = ["blog"]
+min_version = "0.1"
+
+[author]
+  name = "Gokul Prathin A"
+  homepage = "https://about.gokulprathin8.github.io"
