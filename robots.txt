@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gokulprathin8.github.io/about/sitemap.xml
