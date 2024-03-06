@@ -2,7 +2,7 @@
 title: "Hello 👋"
 ---
 
-Hello! I'm Gokul, a passionate **Computer Science & Information Sciences** specialist, currently pursuing my Master's degree at **George Mason University**, Fairfax Campus, VA, with a rich background in software engineering from my Bachelor's degree at **GITAM University**. With a blend of academic excellence and practical experience, I am enthusiastic about developing scalable software solutions and exploring the latest in technology trends. 🚀
+Hello! I'm Gokul, a passionate full-stack web developer, currently pursuing my Master's degree at **George Mason University**, Fairfax Campus, VA, with a rich background in software engineering from my Bachelor's degree at **GITAM University**. With a blend of academic excellence and practical experience, I am enthusiastic about developing scalable software solutions and exploring the latest in technology trends. 🚀
 
 ## Contact Me
 
