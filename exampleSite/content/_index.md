@@ -25,11 +25,6 @@ Hello! I'm Gokul, a passionate **Computer Science & Information Sciences** speci
 - **Project Admin** for Girls Script Summer of Code, leading an open-source e-commerce application development.
 - **Associate Software Engineer** at Divergent Consulting Services, focusing on full-stack e-commerce solutions and performance optimizations.
 
-## Projects 📚
-
-- **Uber Eats Clone:** A comprehensive food delivery application, showcasing my full-stack development capabilities with real-time order updates.
-- **NASA Space App Challenge:** Developed an application for tracking forest fires, demonstrating my ability to work with satellite data and real-time notifications.
-
 ## Certifications 🏅
 
 - **ISRO GIS & Geospatial Navigation System:** Certified in handling and visualizing satellite data for meaningful insights.
